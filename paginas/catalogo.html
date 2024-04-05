@@ -3,39 +3,1060 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Catalogo</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../estilos/estilocatalogo.css">
 </head>
-<body>
+<body background="/fotos/backgraund.jpg">
     <header>
         <!--inicio-->
-        
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <a class="navbar-brand" href="#">
+              <img src="/fotos/logo_pagina.png" alt="" width="64" height="64" >
+            </a>
+            <li class="nav-item dropdown px-3">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >Catalogo
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/Categoria/Accion.html">Accion</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Aventura.html">Aventura</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Carrera.html">Carrera</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Deporte.html">Deporte</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Estrategia.html">Estrategia</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Musica.html">Musica</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Rogue.html">Roguelike</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Rol.html">Rol</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Simula.html">Simulacion</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Turnos.html">turnos</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Free.html">Free to Play</a></li>
+                </ul>
+              </li>
+          </nav>
         <!--fin-->
     </header>
 
     <main>
         <!--inicio-->
-        <div class="row row-cols-2 row-cols-md-4 g-8">
+        <div class="row row-cols-1 row-cols-md-4 g-5 mx-auto w-75">
           
-          <div class="col">
-                    <div class="card border-dark mb-3" style="max-width: 20rem;">
-                    <div class="card text-bg-warning mb-0" style="max-width: 20rem;">
-                    <img src="/fotos/Juego_Accion_2 (RDR2).jpeg" class="card-img-top" alt="..." width="300" height="300">
-                    <div class="card-header">Red Dead Redepcion 2</div>
-                    <div class="card-body">
-                    <h5 class="card-title">Rocsktar games</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card border-dark mb-3" style="max-width: 100rem;">
+                    <div class="card text-bg-warning mb-0" style="max-width: 100rem;">
+                        <img src="/fotos/Juego_Accion_1 (APEX).jpg" class="card-img-top" alt="..." width="400" height="400">
+                        <div class="card-header text-center">Apex Legends</div>
+                        <div class="card-body">
+                        <h5 class="card-title">Respawn Entertainment</h5>                    
+                        <p class="card-text">Domina un elenco creciente de leyendas con potentes habilidades. Juego estratégico basado en pelotones y jugabilidad innovadora en la nueva evolución del Battle Royale.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Juego_act1">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mascota1">Comprar</a>
+          <div class="col">
+            <div class="card h-100">
+                <div  class="card border-dark mb-3" style="max-width: 100rem;">
+                    <div class="card text-bg-warning mb-0" style="max-width: 100rem;">
+                        <img src="/fotos/Juego_Aventura_1 (DD 2).jpg" class="card-img-top" alt="..." width="400" height="400">
+                        <div class="card-header text-center">Dragon's Dogma 2</div>
+                        <div class="card-body">
+                        <h5 class="card-title">CAPCOM Co., Ltd.</h5>                    
+                        <p class="card-text">Dragon’s Dogma 2 es un juego de rol y acción basado en historia y para un jugador que te permite elegir tu propia experiencia.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Juego_aven1">Comprar</a>
+                        </div>
+                    </div>
                 </div>
             </div>
           </div>
+        
+          <div class="col">
+            <div class="card h-100">
+                <div class="card border-dark mb-3" style="max-width: 100rem;">
+                        <div class="card text-bg-warning mb-0" style="max-width: 100rem;">
+                        <img  src="/fotos/Juego_Carrera_1 (FH 5).jpg" class="card-img-top" alt="..." width="400" height="400">
+                        <div class="card-header text-center">Forza Horizon 5</div>
+                        <div class="card-body">
+                        <h5 class="card-title">Playground Games</h5>                    
+                        <p class="card-text">Explora los vibrantes paisajes del mundo abierto de México y disfruta de una diversión sin límites al volante de los mejores coches del mundo. Conquista la escarpada Sierra Nueva en la experiencia definitiva del rally de Horizon.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Juego_car1">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+                <div class="card border-dark mb-3" style="max-width: 1000rem;">
+                    <div class="card text-bg-warning mb-0" style="max-width: 100rem;">
+                        <img src="/fotos/Juego_Deporte_1 (FIFA 24 ).jpg" class="card-img-top" alt="..." width="400" height="400">
+                        <div class="card-header text-center">EA SPORTS FC™ 24</div>
+                        <div class="card-body">
+                        <h5 class="card-title">Electronic Arts</h5>                    
+                        <p class="card-text">EA SPORTS FC™ 24 te da la bienvenida a The World's Game: la experiencia futbolística más fiel hasta la fecha con HyperMotionV, PlayStyles optimizado por Opta y el motor mejorado de Frostbite™.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Juego_dep1">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+                <div class="card border-dark mb-3" style="max-width: 100rem;">
+                    <div class="card text-bg-warning mb-0" style="max-width: 100rem;">
+                        <img src="/fotos/Juego_Estrategia_1 (Dota 2).jpg" class="card-img-top" alt="..." width="400" height="400">
+                        <div class="card-header text-center">Dota 2</div>
+                        <div class="card-body">
+                        <h5 class="card-title">Valve</h5>                    
+                        <p class="card-text">Cada día, millones de jugadores de todo el mundo entran en batalla como uno de los más de cien héroes de Dota. Y no importa si es su décima hora de juego o la milésima, siempre hay algo nuevo que descubrir.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Juego_estra1">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+                <div class="card border-dark mb-3" style="max-width: 100rem;">
+                    <div class="card text-bg-warning mb-0" style="max-width: 100rem;">
+                        <img src="/fotos/Juego_Musica_1 (Bear Saber).jpg" class="card-img-top" alt="..." width="400" height="400">
+                        <div class="card-header text-center">Beat Saber</div>
+                        <div class="card-body">
+                        <h5 class="card-title">Beat Games</h5>                    
+                        <p class="card-text">Beat Saber es un juego rítmico de RV donde rebanas los ritmos de la palpitante música mientras vuelan hacia ti, rodeado de un mundo futurista.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Juego_music1">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+                <div class="card border-dark mb-3" style="max-width: 100rem;">
+                    <div class="card text-bg-warning mb-0" style="max-width: 100rem;">
+                        <img src="/fotos/Juego_Roguelike_1 (Dead Cells ).jpg" class="card-img-top" alt="..." width="400" height="400">
+                        <div class="card-header text-center">Dead Cells</div>
+                        <div class="card-body">
+                        <h5 class="card-title">Motion Twin</h5>                    
+                        <p class="card-text">Dead Cells es un juego de acción de plataformas de estilo roguelite e inspirado en juegos tipo metroidvania. Explorarás un castillo en constante cambio y expansión, si es que logras abrirte paso contra los guardianes en los combates 2D de estilo Dark Souls. </p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Juego_rogue1">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+                <div class="card border-dark mb-3" style="max-width: 100rem;">
+                    <div class="card text-bg-warning mb-0" style="max-width: 100rem;">
+                        <img src="/fotos/Juego_Rol_1 (CP 2077).jpg" class="card-img-top" alt="..." width="400" height="400">
+                        <div class="card-header text-center">Cyberpunk 2077</div>
+                        <div class="card-body">
+                        <h5 class="card-title">CD PROJEKT RED</h5>                    
+                        <p class="card-text">Cyberpunk 2077 es un RPG de aventura y acción de mundo abierto ambientado en el futuro sombrío de Night City, una peligrosa megalópolis obsesionada con el poder, el glamur y las incesantes modificaciones corporales.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Juego_rol1">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+                <div class="card border-dark mb-3" style="max-width: 100rem;">
+                    <div class="card text-bg-warning mb-0" style="max-width: 100rem;">
+                        <img src="/fotos/Juego_Simulacion_1 (Stardew Valley).jpg" class="card-img-top" alt="..." width="400" height="400">
+                        <div class="card-header text-center">Stardew Valley</div>
+                        <div class="card-body">
+                        <h5 class="card-title">
+                            ConcernedApe</h5>                    
+                        <p class="card-text">Acabas de heredar la vieja parcela agrícola de tu abuelo de Stardew Valley. Decides partir hacia una nueva vida con unas herramientas usadas y algunas monedas. ¿Te ves capaz de vivir de la tierra y convertir estos campos descuidados en un hogar próspero?</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Juego_sim1">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+            <div class="card border-dark mb-3" style="max-width: 100rem;">
+                <div class="card text-bg-warning mb-0" style="max-width: 100rem;">
+                    <img src="/fotos/Juego_Turnos_1 (Persona 3 R).jpg" class="card-img-top" alt="..." width="400" height="400">
+                    <div class="card-header text-center">Persona 3 Reload</div>
+                    <div class="card-body">
+                    <h5 class="card-title">
+                        ATLUS</h5>                    
+                    <p class="card-text">Sumérgete en la Hora Oscura y despierta lo más profundo de tu corazón. Persona 3 Reload es la fascinante nueva versión del RPG que definió el género y que ahora renace para la era moderna con gráficos y una jugabilidad de última generación.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Juego_turn1">Comprar</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+            <div class="card border-dark mb-3" style="max-width: 50rem;">
+                <div class="card text-bg-warning mb-0" style="max-width: 50rem;">
+                    <img src="/fotos/Juego_Accion_2 (RDR2).jpeg" class="card-img-top" alt="..." width="400" height="400">
+                    <div class="card-header text-center">Red Dead Redemption 2</div>
+                    <div class="card-body">
+                    <h5 class="card-title">Rockstar Games</h5>                    
+                    <p class="card-text">Red Dead Redemption 2 es la épica historia de Arthur Morgan y la banda de Van der Linde, que huyen por toda América en el albor de una nueva era.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Juego_act2">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+            <div class="card border-dark mb-3" style="max-width: 50rem;">
+                <div class="card text-bg-warning mb-0" style="max-width: 50rem;">
+                    <img src="/fotos/Juego_Aventura_2 (Losk Ark).jpg" class="card-img-top" alt="..." width="400" height="400">
+                    <div class="card-header text-center">Lost Ark</div>
+                    <div class="card-body">
+                    <h5 class="card-title">
+                        Smilegate RPG</h5>                    
+                    <p class="card-text">Embárcate en una odisea en el gigantesco y vibrante mundo de Lost Ark: explora lugares desconocidos, busca tesoros perdidos y ponte a prueba con la emocionante acción y combate de este RPG de acción gratuito. </p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Juego_aven2">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+            <div class="card border-dark mb-3" style="max-width: 100rem;">
+                <div class="card text-bg-warning mb-0" style="max-width: 100rem;">
+                    <img src="/fotos/Juego_Carrera_2 (NFS Heat ).jpg" class="card-img-top" alt="..." width="400" height="400">
+                    <div class="card-header text-center">Need for Speed™ Heat</div>
+                    <div class="card-body">
+                    <h5 class="card-title">Ghost Games</h5>                    
+                    <p class="card-text">No pares por el día y arriésgalo todo por la noche en Need for Speed™ Heat Deluxe Edition, un juego de carreras callejeras dinámico donde los límites de la ley se desvanecen cuando empieza a anochecer.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Juego_car2">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+            <div class="card border-dark mb-3" style="max-width: 100rem;">
+                <div class="card text-bg-warning mb-0" style="max-width: 100rem;">
+                    <img src="/fotos/Juego_Deporte_2 (NBA 24 ).jpg" class="card-img-top" alt="..." width="400" height="400">
+                    <div class="card-header text-center">NBA 2K24</div>
+                    <div class="card-body">
+                    <h5 class="card-title">
+                        Visual Concepts</h5>                    
+                    <p class="card-text">Experimenta la cultura del baloncesto en NBA 2K24. Disfruta da acción a raudales y de opciones ilimitadas de personalización de Mi JUGADOR en Mi CARRERA. Crea tu quinteto de ensueño en MyTEAM. </p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Juego_dep2">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+            <div class="card border-dark mb-3" style="max-width: 50rem;">
+                <div class="card text-bg-warning mb-0" style="max-width: 50rem;">
+                    <img src="/fotos/Juego_Estrategia_2 (Balatro).jpg" class="card-img-top" alt="..." width="400" height="400">
+                    <div class="card-header text-center">Balatro</div>
+                    <div class="card-body">
+                    <h5 class="card-title">
+                        LocalThunk</h5>                    
+                    <p class="card-text">El roguelike de póker. Balatro es un hipnótico y genial constructor de mazos donde podrás jugar manos ilegales de póker, descubrir comodines que alterarán tus partidas y activar combos impresionantes que dispararán tu adrenalina.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Juego_estra2">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+                <div class="card border-dark mb-3" style="max-width: 100rem;">
+                    <div class="card text-bg-warning mb-0" style="max-width: 100rem;">
+                        <img src="/fotos/Juego_Musica_2 (Muse Dash).jpg" class="card-img-top" alt="..." width="400" height="400">
+                        <div class="card-header text-center">Muse Dash</div>
+                        <div class="card-body">
+                        <h5 class="card-title">
+                            peropero</h5>                    
+                        <p class="card-text">Paradise of parkour & rhythm game ★★★ — Muse Dash!!</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Juego_music2">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+                <div class="card border-dark mb-3" style="max-width: 100rem;">
+                    <div class="card text-bg-warning mb-0" style="max-width: 100rem;">
+                        <img src="/fotos/Juego_Roguelike_2 (Hollow Knight ).jpg" class="card-img-top" alt="..." width="400" height="400">
+                        <div class="card-header text-center">Hollow Knight: Silksong</div>
+                        <div class="card-body">
+                        <h5 class="card-title">
+                            Team Cherry</h5>                    
+                        <p class="card-text">
+                            Descubre un vasto reino embrujado en Hollow Knight: Silksong, ¡la secuela del galardonado juego de acción y aventuras! Explora, lucha y sobrevive mientras asciendes hacia la cima de una tierra gobernada por la seda y la canción.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Juego_rogue2">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+                <div class="card border-dark mb-3" style="max-width: 100rem;">
+                    <div class="card text-bg-warning mb-0" style="max-width: 100rem;">
+                        <img src="/fotos/Juego_Rol_2 (BG 3).jpg" class="card-img-top" alt="..." width="400" height="400">
+                        <div class="card-header text-center">Baldur's Gate 3</div>
+                        <div class="card-body">
+                        <h5 class="card-title">Larian Studios</h5>                    
+                        <p class="card-text">Reúne a tu grupo y vuelve a los Reinos Olvidados en un relato de compañerismo y traición, sacrificio y supervivencia, además de la atracción de un poder absoluto.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Juego_rol2">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+                <div class="card border-dark mb-3" style="max-width: 100rem;">
+                    <div class="card text-bg-warning mb-0" style="max-width: 100rem;">
+                        <img src="/fotos/Juego_Simulacion_2 (Kenshi ).jpg" class="card-img-top" alt="..." width="400" height="400">
+                        <div class="card-header text-center">Kenshi</div>
+                        <div class="card-body">
+                        <h5 class="card-title">
+                            Lo-Fi Games</h5>                    
+                        <p class="card-text">Un videojuego de rol de mundo abierto con estrategias a tiempo real y con eventos que no tienen una secuencia argumentativa lineal. Sé un comerciante, un ladrón, un rebelde, un señor de la guerra, un aventurero, un granjero, un esclavo o tan sólo comida para los caníbales.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Juego_sim2">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+                <div class="card border-dark mb-3" style="max-width: 100rem;">
+                    <div class="card text-bg-warning mb-0" style="max-width: 100rem;">
+                        <img src="/fotos/Juego_Turnos_2 (Darkest Dungeon ).jpg" class="card-img-top" alt="..." width="400" height="400">
+                        <div class="card-header text-center">Darkest Dungeon</div>
+                        <div class="card-body">
+                        <h5 class="card-title">Red Hook Studios</h5>                    
+                        <p class="card-text">Darkest Dungeon es un desafiante juego de rol gótico en mazmorras y por turnos que gira en torno al esfuerzo psicológico de la aventura. Recluta, entrena y lidera a un equipo de héroes imperfectos a través de enrevesados bosques, laberintos olvidados, criptas en ruinas y más allá.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Juego_tur2">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
         </div>
 
+        <!-- Modal 1 -->
+        <div class="modal fade" id="Juego_act1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar Apex Legends</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1 class="h1 text-center pb-3">Apex Legends</h1>
+                  <img
+                    src="/fotos/Juego_Accion_1 (APEX).jpg"
+                    alt=""
+                    class="img-fluid rounded-2"
+                    width="500" height="500"
+                  />
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li>Nombre: Apex Legends</li>
+                      <li>Reseñas: Mayormente Positivas</li>
+                      <li>Año de Lanzamiento: 2020</li>
+                      <li>Desarrollador: Respawn Entertainment</li>
+                      <li>Editor: Electronic Arts</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                  <a class="btn btn-primary" href="/pagina/adopcion.html" role="button">Free</a>
+                </div>
+              </div>
+            </div>
+          </div>
 
+        <!-- Modal 2 -->
+        <div class="modal fade" id="Juego_aven1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar Dragon’s Dogma 2</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1 class="h1 text-center pb-3">Dragon’s Dogma 2</h1>
+                  <img
+                    src="/fotos/Juego_Aventura_1 (DD 2).jpg"
+                    alt=""
+                    class="img-fluid rounded-2"
+                    width="500" height="500"
+                  />
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li>Nombre: Dragon’s Dogma 2</li>
+                      <li>Reseñas: Variadas</li>
+                      <li>Año de Lanzamiento: 2024</li>
+                      <li>Desarrollador: CAPCOM Co., Ltd.</li>
+                      <li>Editor: CAPCOM Co., Ltd.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                  <a class="btn btn-primary" href="/pagina/adopcion.html" role="button">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <!-- Modal 3 -->
+        <div class="modal fade" id="Juego_car1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar Forza Horizon 5</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1 class="h1 text-center pb-3">Forza Horizon 5</h1>
+                  <img
+                    src="/fotos/Juego_Carrera_1 (FH 5).jpg"
+                    alt=""
+                    class="img-fluid rounded-2"
+                    width="500" height="500"
+                  />
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li>Nombre: Forza Horizon 5</li>
+                      <li>Reseñas: Positivas</li>
+                      <li>Año de Lanzamiento: 2021</li>
+                      <li>Desarrollador: Playground Games</li>
+                      <li>Editor: Xbox Game Studios</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                  <a class="btn btn-primary" href="/pagina/adopcion.html" role="button">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Modal 4 -->
+        <div class="modal fade" id="Juego_dep1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar EA SPORTS FC 24</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1 class="h1 text-center pb-3">Forza Horizon 5</h1>
+                  <img
+                    src="/fotos/Juego_Deporte_1 (FIFA 24 ).jpg"
+                    alt=""
+                    class="img-fluid rounded-2"
+                    width="500" height="500"
+                  />
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li>Nombre: EA SPORTS FC 24</li>
+                      <li>Reseñas: Variadas</li>
+                      <li>Año de Lanzamiento: 2023</li>
+                      <li>Desarrollador: EA Canada & EA Romania</li>
+                      <li>Editor: Electronic Arts</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                  <a class="btn btn-primary" href="/pagina/adopcion.html" role="button">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <!-- Modal 6 -->
+        <div class="modal fade" id="Juego_music1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar Bear Saber</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1 class="h1 text-center pb-3">Bear Saber</h1>
+                  <img
+                    src="/fotos/Juego_Musica_1 (Bear Saber).jpg"
+                    alt=""
+                    class="img-fluid rounded-2"
+                    width="500" height="500"
+                  />
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li>Nombre: Bear Saber</li>
+                      <li>Reseñas: Extremadamente Positivas</li>
+                      <li>Año de Lanzamiento: 2010</li>
+                      <li>Desarrollador: Beat Games</li>
+                      <li>Editor: Beat Games</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                  <a class="btn btn-primary" href="/pagina/adopcion.html" role="button">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Modal 5 -->
+        <div class="modal fade" id="Juego_estra1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar Dota 2</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1 class="h1 text-center pb-3">Dota 2</h1>
+                  <img
+                    src="/fotos/Juego_Estrategia_1 (Dota 2).jpg"
+                    alt=""
+                    class="img-fluid rounded-2"
+                    width="500" height="500"
+                  />
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li>Nombre: Dota 2</li>
+                      <li>Reseñas: Positivas</li>
+                      <li>Año de Lanzamiento: 2013</li>
+                      <li>Desarrollador: Valve</li>
+                      <li>Editor: Valve</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                  <a class="btn btn-primary" href="/pagina/adopcion.html" role="button">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <!-- Modal 7 -->
+        <div class="modal fade" id="Juego_rogue1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar Dead Cells</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1 class="h1 text-center pb-3">Dead Cells</h1>
+                  <img
+                    src="/fotos/Juego_Roguelike_1 (Dead Cells ).jpg"
+                    alt=""
+                    class="img-fluid rounded-2"
+                    width="500" height="500"
+                  />
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li>Nombre: Dead Cells</li>
+                      <li>Reseñas: Extremadamente Positivas</li>
+                      <li>Año de Lanzamiento: 2018</li>
+                      <li>Desarrollador: Motion Twin</li>
+                      <li>Editor: Motion Twin</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                  <a class="btn btn-primary" href="/pagina/adopcion.html" role="button">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Modal 8 -->
+        <div class="modal fade" id="Juego_rol1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar Cyberpunk 2077</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1 class="h1 text-center pb-3">Cyberpunk 2077</h1>
+                  <img
+                    src="/fotos/Juego_Rol_1 (CP 2077).jpg"
+                    alt=""
+                    class="img-fluid rounded-2"
+                    width="500" height="500"
+                  />
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li>Nombre: Cyberpunk 2077</li>
+                      <li>Reseñas: Positivas</li>
+                      <li>Año de Lanzamiento: 2020</li>
+                      <li>Desarrollador: CD PROJEKT RED</li>
+                      <li>Editor: CD PROJEKT RED</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                  <a class="btn btn-primary" href="/pagina/adopcion.html" role="button">CLP$ 40.000</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Modal 9 -->
+        <div class="modal fade" id="Juego_sim1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar Stardew Valley</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1 class="h1 text-center pb-3">Stardew Valley</h1>
+                  <img
+                    src="/fotos/Juego_Simulacion_1 (Stardew Valley).jpg"
+                    alt=""
+                    class="img-fluid rounded-2"
+                    width="500" height="500"
+                  />
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li>Nombre: Stardew Valley</li>
+                      <li>Reseñas: Mayormente Positivas</li>
+                      <li>Año de Lanzamiento: 2016</li>
+                      <li>Desarrollador: ConcernedApe</li>
+                      <li>Editor: ConcernedApe</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                  <a class="btn btn-primary" href="/pagina/adopcion.html" role="button">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Modal 10 -->
+        <div class="modal fade" id="Juego_turn1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar Persona 3 Reload</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1 class="h1 text-center pb-3">Persona 3 Reload</h1>
+                  <img
+                    src="/fotos/Juego_Turnos_1 (Persona 3 R).jpg"
+                    alt=""
+                    class="img-fluid rounded-2"
+                    width="500" height="500"
+                  />
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li>Nombre: Persona 3 Reload</li>
+                      <li>Reseñas: Positivas</li>
+                      <li>Año de Lanzamiento: 2024</li>
+                      <li>Desarrollador: Atlus</li>
+                      <li>Editor: Sega</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                  <a class="btn btn-primary" href="/pagina/adopcion.html" role="button">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Modal 11 -->
+        <div class="modal fade" id="Juego_act2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar RED Dead Redemption 2</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1 class="h1 text-center pb-3">RED Dead Redemption 2</h1>
+                  <img
+                    src="/fotos/Juego_Accion_2 (RDR2).jpeg"
+                    alt=""
+                    class="img-fluid rounded-2"
+                    width="500" height="500"
+                  />
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li>Nombre: RED Dead Redemption 2</li>
+                      <li>Reseñas: Mayormente Positivas</li>
+                      <li>Año de Lanzamiento: 2019</li>
+                      <li>Desarrollador: Rockstar Games</li>
+                      <li>Editor: Rockstar Games</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                  <a class="btn btn-primary" href="/pagina/adopcion.html" role="button">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Modal 12-->
+        <div class="modal fade" id="Juego_aven2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar Losk Ark</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1 class="h1 text-center pb-3">Losk Ark</h1>
+                  <img
+                    src="/fotos/Juego_Aventura_2 (Losk Ark).jpg"
+                    alt=""
+                    class="img-fluid rounded-2"
+                    width="500" height="500"
+                  />
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li>Nombre: Losk Ark</li>
+                      <li>Reseñas: Variadas</li>
+                      <li>Año de Lanzamiento: 2022</li>
+                      <li>Desarrollador: Smilegate RPG</li>
+                      <li>Editor: Amazon Games</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                  <a class="btn btn-primary" href="/pagina/adopcion.html" role="button">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <!-- Modal 13 -->
+        <div class="modal fade" id="Juego_car2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar Need For Speed™ Heat</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1 class="h1 text-center pb-3">Need For Speed™ Heat</h1>
+                  <img
+                    src="/fotos/Juego_Carrera_2 (NFS Heat ).jpg"
+                    alt=""
+                    class="img-fluid rounded-2"
+                    width="500" height="500"
+                  />
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li>Nombre: Need For Speed™ Heat</li>
+                      <li>Reseñas: Positivas</li>
+                      <li>Año de Lanzamiento: 2019</li>
+                      <li>Desarrollador: Ghost Games</li>
+                      <li>Editor: Electronic Arts</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                  <a class="btn btn-primary" href="/pagina/adopcion.html" role="button">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Modal 14 -->
+        <div class="modal fade" id="Juego_dep2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar NBA 24</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1 class="h1 text-center pb-3">NBA 24</h1>
+                  <img
+                    src="/fotos/Juego_Deporte_2 (NBA 24 ).jpg"
+                    alt=""
+                    class="img-fluid rounded-2"
+                    width="500" height="500"
+                  />
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li>Nombre: NBA 24</li>
+                      <li>Reseñas: Mayormente Negativas</li>
+                      <li>Año de Lanzamiento: 2023</li>
+                      <li>Desarrollador: Visual Concepts</li>
+                      <li>Editor: 2k</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                  <a class="btn btn-primary" href="/pagina/adopcion.html" role="button">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Modal 15 -->
+        <div class="modal fade" id="Juego_estra2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar Balatro </h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1 class="h1 text-center pb-3">Balatro</h1>
+                  <img
+                    src="/fotos/Juego_Estrategia_2 (Balatro).jpg"
+                    alt=""
+                    class="img-fluid rounded-2"
+                    width="500" height="500"
+                  />
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li>Nombre: Balatro</li>
+                      <li>Reseñas: Mayormente Positivas</li>
+                      <li>Año de Lanzamiento: 2024</li>
+                      <li>Desarrollador: LocalThunk</li>
+                      <li>Editor: PlayStack</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                  <a class="btn btn-primary" href="/pagina/adopcion.html" role="button">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Modal 16 -->
+        <div class="modal fade" id="Juego_music2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar Muse Dash</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1 class="h1 text-center pb-3">Muse Dash</h1>
+                  <img
+                    src="/fotos/Juego_Musica_2 (Muse Dash).jpg"
+                    alt=""
+                    class="img-fluid rounded-2"
+                    width="500" height="500"
+                  />
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li>Nombre: Muse Dash</li>
+                      <li>Reseñas: Positivas</li>
+                      <li>Año de Lanzamiento: 2019</li>
+                      <li>Desarrollador: peropero</li>
+                      <li>Editor: hasuhasu</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                  <a class="btn btn-primary" href="/pagina/adopcion.html" role="button">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Modal 17 -->
+        <div class="modal fade" id="Juego_rogue2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar Hollow Knight :Silksong </h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1 class="h1 text-center pb-3">Hollow Knight :Silksong</h1>
+                  <img
+                    src="/fotos/Juego_Roguelike_2 (Hollow Knight ).jpg"
+                    alt=""
+                    class="img-fluid rounded-2"
+                    width="500" height="500"
+                  />
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li>Nombre: Hollow Knight :Silksong</li>
+                      <li>Reseñas: Mayormente Positivas</li>
+                      <li>Año de Lanzamiento: En algun momento</li>
+                      <li>Desarrollador: Team Cherry</li>
+                      <li>Editor: Team Cherry</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                  <a class="btn btn-primary" href="/pagina/adopcion.html" role="button">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Modal 18 -->
+        <div class="modal fade" id="Juego_rol2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar Baldur Gate 3</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1 class="h1 text-center pb-3">Baldur Gate 3</h1>
+                  <img
+                    src="/fotos/Juego_Rol_2 (BG 3).jpg"
+                    alt=""
+                    class="img-fluid rounded-2"
+                    width="500" height="500"
+                  />
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li>Nombre: Baldur Gate 3</li>
+                      <li>Reseñas: Mayormente Positivas</li>
+                      <li>Año de Lanzamiento: 2023</li>
+                      <li>Desarrollador: Larian Studios</li>
+                      <li>Editor: Larian Studios</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                  <a class="btn btn-primary" href="/pagina/adopcion.html" role="button">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Modal 19 -->
+        <div class="modal fade" id="Juego_sim2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar Kenshi</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1 class="h1 text-center pb-3">Kenshi</h1>
+                  <img
+                    src="/fotos/Juego_Simulacion_2 (Kenshi ).jpg"
+                    alt=""
+                    class="img-fluid rounded-2"
+                    width="500" height="500"
+                  />
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li>Nombre: Kenshi</li>
+                      <li>Reseñas: Positivas</li>
+                      <li>Año de Lanzamiento: 2018</li>
+                      <li>Desarrollador: Lo-Fi Games</li>
+                      <li>Editor: Lo-Fi Games</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                  <a class="btn btn-primary" href="/pagina/adopcion.html" role="button">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Modal 20 -->
+        <div class="modal fade" id="Juego_tur2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar Darkest Dungeon</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1 class="h1 text-center pb-3">Darkest Dungeon</h1>
+                  <img
+                    src="/fotos/Juego_Turnos_2 (Darkest Dungeon ).jpg"
+                    alt=""
+                    class="img-fluid rounded-2"
+                    width="500" height="500"
+                  />
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li>Nombre: Darkest Dungeon</li>
+                      <li>Reseñas: Positivas</li>
+                      <li>Año de Lanzamiento: 2016</li>
+                      <li>Desarrollador: Red Hook Studios</li>
+                      <li>Editor: Red Hook Studios</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                  <a class="btn btn-primary" href="/pagina/adopcion.html" role="button">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
         <!--fin-->
     </main>
-
     <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

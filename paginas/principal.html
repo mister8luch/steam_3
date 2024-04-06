@@ -13,10 +13,34 @@
             <a class="navbar-brand" href="#">
               <img src="/fotos/logo_pagina.png" alt="" width="64" height="64" >
             </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0 h2" >
+                <li class="nav-item px-3" >
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Menu</a
+                  >
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="/paginas/principal.html">Inicio</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="/paginas/productos.html">Mis Productos</a>
+                </li>
             <li class="nav-item dropdown px-3">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="/paginas/principal.html"
+                  href="/paginas/catalogo.html"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -24,17 +48,18 @@
                   Catalogo
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/Perros/Perro.html">Accion</a></li>
-                  <li><a class="dropdown-item" href="/Perros/Perro.html">Aventura</a></li>
-                  <li><a class="dropdown-item" href="/Gatos/Gato.html">Carrera</a></li>
-                  <li><a class="dropdown-item" href="/Gatos/Gato.html">Deporte</a></li>
-                  <li><a class="dropdown-item" href="/Perros/Perro.html">Estrategia</a></li>
-                  <li><a class="dropdown-item" href="/Gatos/Gato.html">Musica</a></li>
-                  <li><a class="dropdown-item" href="/Perros/Perro.html">Roguelike</a></li>
-                  <li><a class="dropdown-item" href="/Gatos/Gato.html">Rol</a></li>
-                  <li><a class="dropdown-item" href="/Perros/Perro.html">Simulacion</a></li>
-                  <li><a class="dropdown-item" href="/Gatos/Gato.html">turnos</a></li>
-                  <li><a class="dropdown-item" href="/Perros/Perro.html">Free to Play</a></li>
+                  <li><a class="dropdown-item" href="/paginas/catalogo.html">Todos</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Accion.html">Accion</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Aventura.html">Aventura</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Carrera.html">Carrera</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Deporte.html">Deporte</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Estrategia.html">Estrategia</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Musica.html">Musica</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Rogue.html">Roguelike</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Rol.html">Rol</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Simula.html">Simulacion</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Turnos.html">turnos</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Free.html">Free to Play</a></li>
                 </ul>
               </li>
           </nav>
@@ -43,6 +68,7 @@
 
     <main>
         <!--inicio-->
+        <br>
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>

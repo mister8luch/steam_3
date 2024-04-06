@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo/Roguelike</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../estilos/estilocatalogo.css">
+</head>
+<body background="/fotos/backgraund.jpg">
+    <header>
+        <!--inicio-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <a class="navbar-brand" href="#">
+              <img src="/fotos/logo_pagina.png" alt="" width="64" height="64" >
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0 h2" >
+                <li class="nav-item px-3" >
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Menu</a
+                  >
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="/paginas/principal.html">Inicio</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="/paginas/productos.html">Mis Productos</a>
+                </li>
+            <li class="nav-item dropdown px-3">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="/paginas/catalogo.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Catalogo
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/paginas/catalogo.html">Todos</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Accion.html">Accion</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Aventura.html">Aventura</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Carrera.html">Carrera</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Deporte.html">Deporte</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Estrategia.html">Estrategia</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Musica.html">Musica</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Rogue.html">Roguelike</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Rol.html">Rol</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Simula.html">Simulacion</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Turnos.html">turnos</a></li>
+                  <li><a class="dropdown-item" href="/Categoria/Free.html">Free to Play</a></li>
+                </ul>
+              </li>
+          </nav>
+        <!--fin-->
+    </header>
+
+    <main>
+        <!--inicio-->
+        <br>
+        <div class="row row-cols-1 row-cols-md-2 g-5 mx-auto w-50">
+          
+          <div class="col">
+            <div class="card h-100">
+                <div class="card border-dark h-100" style="max-width: 100rem;">
+                    <div class="card text-bg-warning h-100" style="max-width: 100rem;">
+                        <img src="/fotos/Juego_Roguelike_1 (Dead Cells ).jpg" class="card-img-top" alt="..." width="400" height="400">
+                        <div class="card-header text-center">Dead Cells</div>
+                        <div class="card-body">
+                        <h5 class="card-title">Motion Twin</h5>                    
+                        <p class="card-text">Dead Cells es un juego de acción de plataformas de estilo roguelite e inspirado en juegos tipo metroidvania. Explorarás un castillo en constante cambio y expansión, si es que logras abrirte paso contra los guardianes en los combates 2D de estilo Dark Souls. </p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Juego_rogue1">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+                <div class="card border-dark h-100" style="max-width: 100rem;">
+                    <div class="card text-bg-warning h-100" style="max-width: 100rem;">
+                        <img src="/fotos/Juego_Roguelike_2 (Hollow Knight ).jpg" class="card-img-top" alt="..." width="400" height="400">
+                        <div class="card-header text-center">Hollow Knight: Silksong</div>
+                        <div class="card-body">
+                        <h5 class="card-title">
+                            Team Cherry</h5>                    
+                        <p class="card-text">
+                            Descubre un vasto reino embrujado en Hollow Knight: Silksong, ¡la secuela del galardonado juego de acción y aventuras! Explora, lucha y sobrevive mientras asciendes hacia la cima de una tierra gobernada por la seda y la canción.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Juego_rogue2">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+        <!-- Modal 7 -->
+         <div class="modal fade" id="Juego_rogue1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar Dead Cells</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1 class="h1 text-center pb-3">Dead Cells</h1>
+                  <img
+                    src="/fotos/Juego_Roguelike_1 (Dead Cells ).jpg"
+                    alt=""
+                    class="img-fluid rounded-2"
+                    width="500" height="500"
+                  />
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li>Nombre: Dead Cells</li>
+                      <li>Reseñas: Extremadamente Positivas</li>
+                      <li>Año de Lanzamiento: 2018</li>
+                      <li>Desarrollador: Motion Twin</li>
+                      <li>Editor: Motion Twin</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                  <a class="btn btn-primary" href="/pagina/adopcion.html" role="button">ClP$ 10.000</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Modal 17 -->
+        <div class="modal fade" id="Juego_rogue2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar Hollow Knight :Silksong </h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1 class="h1 text-center pb-3">Hollow Knight :Silksong</h1>
+                  <img
+                    src="/fotos/Juego_Roguelike_2 (Hollow Knight ).jpg"
+                    alt=""
+                    class="img-fluid rounded-2"
+                    width="500" height="500"
+                  />
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li>Nombre: Hollow Knight :Silksong</li>
+                      <li>Reseñas: Mayormente Positivas</li>
+                      <li>Año de Lanzamiento: En algun momento</li>
+                      <li>Desarrollador: Team Cherry</li>
+                      <li>Editor: Team Cherry</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                  <a class="btn btn-primary" href="/pagina/adopcion.html" role="button">ClP$ 999.999</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--fin-->
+    </main>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

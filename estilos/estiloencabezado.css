@@ -1,0 +1,56 @@
+/*login*/
+.logo a img{
+    float: right;
+    border-radius: 10px;
+    margin-right: 1em;
+}
+
+/*los links*/
+.nav-link {
+    color: orange;
+}
+.navbar-brand{
+    color: orange;
+}
+.navbar-brand:hover{
+    color: orange;
+}
+.nav-link:hover{
+    color: rgb(214, 161, 101);
+}
+/*categoria*/
+.nav-item.dropdown .nav-link{
+    color: orange ;
+}
+
+.nav-item.dropdown .nav-link:hover{
+    color: rgb(214, 161, 101);
+}
+
+.nav-item.dropdown .nav-link.active {
+    color: rgb(214, 161, 101);
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: rgb(214, 161, 101);
+    background-color: white;
+}
+
+
+
+/*buscar*/
+/*
+.btn{
+    background-color: wheat;
+    color: black;
+    border-color: wheat;
+}
+.btn:hover{
+    background-color: gold;
+    color: black;
+    border-color: gold;
+}
+.dropdown-item{
+    color: orange;
+}
+*/

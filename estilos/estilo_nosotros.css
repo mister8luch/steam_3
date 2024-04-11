@@ -1,0 +1,25 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.nosotros
+{
+    padding: 0px;
+}
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+    padding:0 20px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex{
+    flex:0 0 50px;
+    max-width: 50%;
+    padding:0 20px;
+}

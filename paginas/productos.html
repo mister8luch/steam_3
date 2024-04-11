@@ -7,9 +7,10 @@
     <title>Producto</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="../estilos/estiloencabezado.css">
-
+    <link rel="stylesheet" href="/estilos/est_producto.css">
 </head>
-<body>
+
+<body background="/fotos/backgraund.jpg">
     <header>
         <!--inicio-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary ">
@@ -83,10 +84,48 @@
     </header>
 
     <main>
-        <!--inicio-->
-        
-        <!--fin-->
-    </main>
+      <!--inicio-->
+      <div class="list-group">
+          <div class="list-group">
+            <input type="checkbox" id="apex" class="radio-juego">
+            <label for="apex" class="list-group-item list-group-item-action list-group-item-warning">
+                <img src="/fotos/apex_legends_logo.jpg" alt="logo juego..." width="25" height="25">
+                Apex Legends
+            </label>
+            <div class="contenedor-info" id="apex-info">
+                <button type="button" class="btn btn-success">Jugar</button>
+                <h1>Apex Legends</h1>
+                <img src="/fotos/Juego_Accion_1 (APEX).jpg" alt="Apex Legends" width="500" height="500">
+            </div>
+
+          <input type="checkbox" id="persona" class="radio-juego">
+          <label for="persona" class="list-group-item list-group-item-action list-group-item-warning">
+            <img src="/fotos/persona-3-reload_logo.jpg" alt="logo juego..." width="25" height="25">
+            Persona 3: Reload
+          </label>
+          <div class="contenedor-info" id="persona-info">
+              <button type="button" class="btn btn-success ">Jugar</button>
+              <h1>Persona 3: Reload</h1>
+              <img src="/fotos/Juego_Turnos_1 (Persona 3 R).jpg" alt="Persona 3: Reload" width="500" height="500">
+          </div>
+          
+          <input type="checkbox" id="hollow" class="radio-juego">
+          <label for="hollow" class="list-group-item list-group-item-action list-group-item-warning">
+            <img src="/fotos/hollow_nigth_silksons_logo.jpg" alt="logo juego..." width="25" height="25">
+            Hollow Knight: Silksong
+          </label>
+          <div class="contenedor-info" id="hollow-info">
+              <button type="button" class="btn btn-success">Jugar</button>
+              <h1>Hollow Knight: Silksong</h1>
+              <img src="/fotos/Juego_Roguelike_2 (Hollow Knight ).jpg" alt="Hollow Knight: Silksong" width="500" height="500">
+          </div>
+      </div>
+      <!--fin-->
+      <div class="extra" style="flex: 1; border: 3px solid #e92020; padding: 20px">
+            <h2>Trabajando para su Mejor Versión hacia la derecha </h2>
+            <img src="/gif/persona-3-movie-1-makoto-yuki-evoker.gif" alt="Gif" width="500" height="500">
+      </div>
+  </main>
     <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -25,11 +25,21 @@ body{
     padding:0 20px;
 }
 #fNosotros{
-    border-radius: 45%;
+    border-radius: 20%;
+    
 }
 h2{
     color: rgb(246, 246, 246);
 }
 p{
     color: rgb(0, 0, 0);
+    background-color:goldenrod;
 }
+
+.redes{
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+

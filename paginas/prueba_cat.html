@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="/fotos/logo_pagina.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo_Prueba</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/estilos/estiloencabezado.css">
+    
+</head>
+
+<body background="/fotos/backgraund.jpg">
+    <header>
+        <!--inicio-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+          <a class="navbar-brand" href="#" >
+            <img src="/fotos/logo_pagina.png" alt="" width="64" height="64" >
+            <b class="navbar-brand fs-4">Steam 3</b>
+          </a>
+          <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 h2" >
+              <li class="nav-item px-3">
+                <a class="nav-link fs-4 input-group-text" href="/paginas/principal.html">Inicio</a>
+              </li>
+              <li class="nav-item  px-3">
+                <a class="nav-link fs-4 input-group-text" href="/paginas/productos.html">Mis Productos</a>
+              </li>
+           <li class="nav-item dropdown px-3">
+              <a
+                class="nav-link fs-4 input-group-text dropdown-toggle"
+                href="/paginas/catalogo.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Catalogo
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/paginas/catalogo.html">Todos</a></li>
+                <li><a class="dropdown-item" href="/Categoria/Accion.html">Accion</a></li>
+                <li><a class="dropdown-item" href="/Categoria/Aventura.html">Aventura</a></li>
+                <li><a class="dropdown-item" href="/Categoria/Carrera.html">Carrera</a></li>
+                <li><a class="dropdown-item" href="/Categoria/Deporte.html">Deporte</a></li>
+                <li><a class="dropdown-item" href="/Categoria/Estrategia.html">Estrategia</a></li>
+                <li><a class="dropdown-item" href="/Categoria/Musica.html">Musica</a></li>
+                <li><a class="dropdown-item" href="/Categoria/Rogue.html">Roguelike</a></li>
+                <li><a class="dropdown-item" href="/Categoria/Rol.html">Rol</a></li>
+                <li><a class="dropdown-item" href="/Categoria/Simula.html">Simulacion</a></li>
+                <li><a class="dropdown-item" href="/Categoria/Turnos.html">turnos</a></li>
+                <li><a class="dropdown-item" href="/Categoria/Free.html">Free to Play</a></li>
+              </ul>
+            </li>
+             <li class="nav-item px-3">
+              <a class="nav-link fs-4 input-group-text" href="/paginas/acercade.html">Acerca De Nosotros </a>
+             </li>
+            <li class="nav-item px-3">
+              <a class="nav-link fs-4 input-group-text" href="/paginas/soporte.html">Soporte </a>
+            </li>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Tu Juego Es..." aria-label="Search">
+              <button class="btn btn-outline-warning" type="submit">Buscar</button>
+            </form>
+          </ul>
+        </div>
+              <div class="logo">
+              <a class="navbar-brand" href="/paginas/login.html" >
+                <img src="/fotos/login.jpg" alt="login..." width="64" height="64" >
+              </a>
+              </div>
+        </nav>
+        
+        
+    </header>
+    <main>
+      <div id="games-container" class="container mt-5">
+          <div class="row">
+              <!-- Game cards and modals will be inserted here -->
+          </div>
+      </div>
+
+      <script src="../js/bootstrap.bundle.min.js"></script>
+      <script src="../js/jquery-3.7.1.min.js"></script>
+
+      <script>
+          $(document).ready(function () {
+              for (let index = 1; index <= 200; index++) {
+                  $.get(`https://api.rawg.io/api/games/${index}?key=e1b1aaf44d89460d89607a2a53969e87`, function (data) {
+                      $("#games-container .row").append(`
+                          <div class="col-md-4 mb-4">
+                              <div class="card">
+                                  <img src="${data.background_image}" class="card-img-top" alt="${data.name}">
+                                  <div class="card-body">
+                                      <h5 class="card-title">${data.name}</h5>
+                                      <p class="card-text">Rating: ${data.rating}</p>
+                                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gameModal${index}">
+                                          Ver Detalles
+                                      </button>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="modal fade" id="gameModal${index}" tabindex="-1" aria-labelledby="gameModalLabel${index}" aria-hidden="true">
+                              <div class="modal-dialog">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h1 class="modal-title fs-5" id="gameModalLabel${index}">Comprar ${data.name}</h1>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body">
+                                          <h1 class="h1 text-center pb-3">${data.name}</h1>
+                                          <img src="${data.background_image}" alt="${data.name}" class="img-fluid rounded-2" width="500" height="500">
+                                          <div class="row p-5 fs-4">
+                                              <ul>
+                                                  <li>Nombre: ${data.name}</li>
+                                                  <li>Reseñas: ${data.ratings_count} (Rating: ${data.rating})</li>
+                                                  <li>Año de Lanzamiento: ${data.released}</li>
+                                                  <li>Desarrollador: ${data.developers ? data.developers[0].name : 'N/A'}</li>
+                                                  <li>Editor: ${data.publishers ? data.publishers[0].name : 'N/A'}</li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                                          <a class="btn btn-primary" href="/paginas/GraciasPorSuCompra.html" role="button">ClP$ 11.500</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      `);
+                  }).fail(function () {
+                      console.error("Error fetching data for game ID:", index);
+                  });
+              }
+          });
+      </script>
+  </main>
+</body>
+
+</html>

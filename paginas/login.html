@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/estilos/estilolog.css">
   </head>
   <body class=" d-flex justify-content-center align-items-center vh-100">
+    <form action="" method="POST" class="col-md-4 mx-auto text-center mt-3 p-5">
     <div
       class="bg-dark p-5 rounded-3 text-secondary shadow"
       style="width: 20rem"
@@ -33,6 +34,7 @@
           class="form-control bg-light"
           type="text"
           placeholder="Usuario"
+          id="username"
         />
       </div>
       <div class="input-group mt-1">
@@ -47,9 +49,17 @@
           class="form-control bg-light"
           type="password"
           placeholder="Contraseña"
+          id="pass"
         />
     </div>
-    <a class="btn btn-success text-white w-100 mt-2 fw-semibold shadow-sm" href="/paginas/principal.html" role="button">Ingresar</a>
+    <div id="resultado"> <br>
+    </div>
+        <input type="submit" value="Ingresar" class="btn btn-outline-primary mt-1" onclick="validar()">
+        <input type="reset" value="Limpiar" class="btn btn-outline-warning mt-1">
+        <button type="button" onclick="validar()" class="btn btn-outline-success mt-1">Validar</button>
+    </div>
+  </form>
   </body>
   <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/login.js"></script>
 </html>

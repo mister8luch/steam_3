@@ -80,11 +80,11 @@
                 <img src="/fotos/login.jpg" alt="login..." width="64" height="64" >
               </a>
               </div>
-        </nav>
-        
-        
+        </nav>    
     </header>
+
     <main>
+      <!--inicio-->
       <div id="games-container" class="container mt-5">
           <div class="row">
               <!-- Game cards and modals will be inserted here -->
@@ -96,8 +96,8 @@
 
       <script>
           $(document).ready(function () {
-              for (let index = 1; index <= 200; index++) {
-                  $.get(`https://api.rawg.io/api/games/${index}?key=e1b1aaf44d89460d89607a2a53969e87`, function (data) {
+              for (let index = 0; index <= 21; index++) {
+                  $.get(`https://api.rawg.io/api/games/${index}?key=1e335965704b4423915aa10608204d44`, function (data) {
                       $("#games-container .row").append(`
                           <div class="col-md-4 mb-4">
                               <div class="card">
@@ -146,6 +146,7 @@
               }
           });
       </script>
+      <!--Fin-->
   </main>
 </body>
 

@@ -98,44 +98,16 @@
           $(document).ready(function () {
               for (let index = 0; index <= 21; index++) {
                   $.get(`https://www.themealdb.com/api/json/v1/1/categories.php`, function (data) {
-                      $("#games-container .row").append(`
+                      $("#games-container.row").append(`
                           <div class="col-md-4 mb-4">
                               <div class="card">
-                                  <img src="${data.categories.strCategoryThumb}" class="card-img-top" alt="${data.categories.strCategory}">
+                                  <img src="${data.strCategoryThumb}" class="card-img-top" alt="${data.idCategory}">
                                   <div class="card-body">
-                                      <h5 class="card-title">${data.categories.strCategory}</h5>
-                                      <p class="card-text">Rating: ${data.categories.strCategoryDescription}</p>
+                                      <h5 class="card-title">${data.strCategory}</h5>
+                                      <p class="card-text">Rating: ${data.strCategoryDescription}</p>
                                       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gameModal${index}">
                                           Ver Detalles
                                       </button>
-                                  </div>
-                              </div>
-                          </div>
-
-                          <div class="modal fade" id="gameModal${index}" tabindex="-1" aria-labelledby="gameModalLabel${index}" aria-hidden="true">
-                              <div class="modal-dialog">
-                                  <div class="modal-content">
-                                      <div class="modal-header">
-                                          <h1 class="modal-title fs-5" id="gameModalLabel${index}">Comprar ${data.name}</h1>
-                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                      </div>
-                                      <div class="modal-body">
-                                          <h1 class="h1 text-center pb-3">${data.name}</h1>
-                                          <img src="${data.background_image}" alt="${data.name}" class="img-fluid rounded-2" width="500" height="500">
-                                          <div class="row p-5 fs-4">
-                                              <ul>
-                                                  <li>Nombre: ${data.name}</li>
-                                                  <li>Reseñas: ${data.ratings_count} (Rating: ${data.rating})</li>
-                                                  <li>Año de Lanzamiento: ${data.released}</li>
-                                                  <li>Desarrollador: ${data.developers ? data.developers[0].name : 'N/A'}</li>
-                                                  <li>Editor: ${data.publishers ? data.publishers[0].name : 'N/A'}</li>
-                                              </ul>
-                                          </div>
-                                      </div>
-                                      <div class="modal-footer">
-                                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-                                          <a class="btn btn-primary" href="/paginas/GraciasPorSuCompra.html" role="button">ClP$ 11.500</a>
-                                      </div>
                                   </div>
                               </div>
                           </div>

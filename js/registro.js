@@ -28,32 +28,42 @@ $(document).ready(function () {
         return regex.test(nombre);
     } 
 
+    function validarCorreo(correo) {
+        // Expresión regular básica para validar correos electrónicos
+        var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(correo);
+    }
+
     function validarRegistro(nombre,usuario,correo,contrasena){
         
         if(String(nombre).length < 4 || String(nombre).length > 30){
-
+            /* validar Nombre */
             $("#check").html("<div class='alert alert-danger w-50 mx-auto text-center mt-2' >Debe estar entre 4 a 30 caracteres</div>");
-            alert("error en nombre")
+            return false;
+
         }
-        /* else if(validarNombre(nombre)){
-            $("#check").html("<div class='alert alert-danger w-50 mx-auto text-center' > el Nombre no debe tener numeros </div>");
-        } */
+        else if (!validarNombre(nombre)) {
+            /* validar Nombre letras */
+            $("#check").html("<div class='alert alert-danger w-50 mx-auto text-center mt-2'>El nombre no debe contener números</div>");
+            return false;
+        }
         else if (String(usuario).length < 4 || String(usuario).length > 30) {
             /* Validacion usuario */
             $("#check").html("<div class='alert alert-danger w-50 mx-auto text-center mt-2' >Usuario debe tener largo entre 4 y 30 caracteres</div>");
-            alert("error en usuario")
+            return false;
+
         }
 
-        else if (String(correo).length < 4 || String(correo).length > 30) {
-            /* Validacion correo */
-            $("#check").html("<div class='alert alert-danger w-50 mx-auto text-center mt-2' >Correo invalido</div>");
-            alert("error en correo")
+        else if (!validarCorreo(correo) || correo.length > 50) {
+            /* validar correo */
+            $("#check").html("<div class='alert alert-danger w-50 mx-auto text-center mt-2'>Correo inválido</div>");
+            return false;
         }
 
         else if (String(contrasena).length < 8 || String(contrasena).length > 20) {
             /* Validacion contra */
             $("#check").html("<div class='alert alert-danger w-50 mx-auto text-center mt-2' >La contrasena debe estar entre 8 y 20 caracteres</div>");
-            alert("error en contrasena")
+            return false;
         }
         else {
             /* Confirmacion */
@@ -68,7 +78,7 @@ $(document).ready(function () {
         let usuarioGuardado = localStorage.getItem('usuario');
         let passGuardada = localStorage.getItem('contrasena');
         if (usuario === usuarioGuardado && password === passGuardada) {
-            $("#check").html("<div class='alert alert-primary w-50 mx-auto text-center mt-2' >Ingresaste correctamente!</div>");
+            $("#check").html("<div class='alert alert-primary w-75 mx-auto text-center mt-2' >Ingresaste correctamente!</div>");
             setTimeout(() => {
                 window.location.href = '/paginas/principal.html';
             }, 3000);

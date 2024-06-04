@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>acercaDeNosotros</title>
+    {% load static %}
+    <link rel="icon" href="{% static 'img/logo_pagina.png' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/estiloencabezado.css' %}">
+    <link rel="stylesheet" href="{% static 'css/estilo_nosotros.css' %}">
+    <link rel="stylesheet" href="{% static 'css/estilo_fondo.css' %}">
+</head>
+
+<body>
+    {% include 'base/header.html' %}
+    <main>
+        <br>
+        <div class="nosotros">
+          <div class="container">
+            <div class="row">
+              <div class="col-6">
+                <h2 style="color:orangered"> <strong>Sobre Nosotros</strong></h2>
+                <p style="flex: 1; border: 3px solid black; padding: 15px">
+                  <strong>
+                  Bienvenido a Steam 3, tu destino número uno para la mejor experiencia en juegos digitales. En Steam 3, entendemos la pasión que los videojuegos despiertan en cada uno de nosotros. Desde los momentos de emoción pura hasta la inmersión total en mundos fantásticos, sabemos que los juegos son más que simples entretenimientos: son aventuras que nos conectan, nos desafían y nos inspiran.
+                 <br> <br>
+                  En Steam 3, nos enorgullece ofrecerte una selección cuidadosamente curada de los últimos lanzamientos, clásicos atemporales y joyas ocultas del mundo de los videojuegos. Nuestro equipo está formado por verdaderos aficionados que comparten tu entusiasmo y están comprometidos a brindarte la mejor experiencia de compra posible.
+                  <br> <br>
+                  Ya sea que estés buscando la última entrega de tu franquicia favorita, explorando nuevos mundos virtuales o buscando ese juego retro que te transportará a tu infancia, en Steam 3 lo tenemos todo. Además, nos esforzamos por ofrecer precios competitivos y promociones irresistibles para que puedas disfrutar de tus juegos preferidos sin romper tu presupuesto.
+                  <br> <br>
+                  <a href="{% url 'catalogo' %}" style="color: crimson;">¡Que empiece el juego!</a>
+                  <br> <br> 
+                   El equipo de Steam 3
+                  </strong>
+                  <a href="" class="redes">
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-discord"></i>
+                    <i class="fa-brands fa-telegram"></i>
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                  </a>
+                </p>
+                
+              </div>
+                  <div class="col-6">
+                    <img src="{% static 'img/Principal.jpg' %}" alt="" id="fNosotros" width="600" height="670" >
+                  </div>
+                  <!--<div class="contenedor">
+                    <a href="" class="instagram">
+                      <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                  </div>-->
+                  
+            </div>
+          </div>
+        </div>
+
+    </main>
+    <script src="{% static '/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

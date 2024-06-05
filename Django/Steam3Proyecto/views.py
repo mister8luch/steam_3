@@ -20,3 +20,15 @@ def acercade(request):
 def soporte(request):
     context = {}
     return render(request, 'pages/soporte.html', context)
+
+def usuario(request):
+    context = {}
+    return render(request, 'pages/usuario.html', context)
+
+def login(request):
+    context = {}
+    return render(request, 'pages/usur/login.html', context)
+
+def registro(request):
+    context = {}
+    return render(request, 'pages/usur/registro.html', context)

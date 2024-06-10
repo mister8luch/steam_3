@@ -32,3 +32,7 @@ def login(request):
 def registro(request):
     context = {}
     return render(request, 'pages/usur/registro.html', context)
+
+def pagoFinal(request):
+    context = {}
+    return render(request, 'pages/compraFinal.html', context)

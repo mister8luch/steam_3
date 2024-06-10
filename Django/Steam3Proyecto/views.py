@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from .models import Juego
 # Create your views here.
 def principal(request):
     context = {}
@@ -10,7 +10,10 @@ def producto(request):
     return render(request, 'pages/producto.html', context)
 
 def catalogo(request):
-    context = {}
+    juego=Juego.objects.all()
+    context = {
+        'juegos': juego
+    }
     return render(request, 'pages/catalogo.html', context)
 
 def acercade(request):

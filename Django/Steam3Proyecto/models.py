@@ -8,4 +8,6 @@ class Juego(models.Model):
     resena=models.CharField(max_length=50)
     fecha_lanzamiento=models.CharField(max_length=10)
     editor=models.CharField(max_length=50)
-    
+    genero=models.CharField(max_length=50)
+    ruta_imagen=models.CharField(max_length=100)
+    precio=models.CharField(max_length=100)

@@ -9,110 +9,59 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/estiloUsur.css' %}">
 </head>
-    <body class=" d-flex justify-content-center align-items-center vh-100">
-        <form action=" {% url 'login' %} " method="POST" id="form" class="col-md-4 mx-auto text-center mt-3 p-5">
-            {%  csrf_token  %}
-        <div
-            class="bg-dark p-5 rounded-3 text-secondary shadow"
-            style="width: 20rem"
-        >
-        <div class="d-flex justify-content-center">
+<body class="d-flex justify-content-center align-items-center vh-100">
+    <form action="{% url 'registro' %}" method="POST" id="form" class="col-md-4 mx-auto text-center mt-3 p-5">
+        {% csrf_token %}
+        <div class="bg-dark p-5 rounded-3 text-secondary shadow" style="width: 20rem">
+            <div class="d-flex justify-content-center"></div>
+            <div style="color:snow;" class="text-center fs-2 fw-bold">Registro</div>
+
+            {% if errors %}
+                <div class="alert alert-danger">
+                    <ul>
+                        {% for error in errors %}
+                            <li>{{ error }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+
+            <div class="input-group mt-1">
+                <div class="input-group-text bg-dark">
+                    <img src="{% static 'img/username-icon.svg' %}" alt="username-icon" style="height: 1rem" />
+                </div>
+                <input class="form-control bg-light" type="text" name="name" placeholder="Nombre" id="name" />
+            </div>
+
+            <div class="input-group mt-1">
+                <div class="input-group-text bg-dark">
+                    <img src="https://static.vecteezy.com/system/resources/previews/005/005/909/non_2x/user-icon-in-trendy-flat-style-isolated-on-grey-background-user-symbol-for-your-web-site-design-logo-app-ui-illustration-eps10-free-vector.jpg" alt="username-icon" style="height: 1rem" />
+                </div>
+                <input class="form-control bg-light" type="text" name="username" placeholder="Usuario" id="username" />
+            </div>
+
+            <div class="input-group mt-1">
+                <div class="input-group-text bg-dark">
+                    <img src="https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcTxHMiZ_2eirOvWeLu_WaFHzBzWHkll4nDwNFHWmB9zlfxcF3q7cKV1Y9rHnrbgICrt" alt="email-icon" style="height: 1rem" />
+                </div>
+                <input class="form-control bg-light" type="email" name="email" placeholder="Correo Electrónico" id="email" />
+            </div>
+
+            <div class="input-group mt-1">
+                <div class="input-group-text bg-danger">
+                    <img src="{% static 'img/password-icon.svg' %}" alt="password-icon" style="height: 1rem" />
+                </div>
+                <input class="form-control bg-light" type="password" name="password" placeholder="Contraseña" id="pass" />
+            </div>
+
+            <div id="check"></div>
+
+            <button class="btn btn-secondary mt-3 mx-auto d-block w-75 rounded-pill" id="btn_reg" type="button">Registrarse</button>
         </div>
-        <div style="color:snow;"class="text-center fs-2 fw-bold">Registro</div>
-                <div class="input-group mt-1">
-                    <div class="input-group-text bg-dark">
-                    <img
-                        src="{%static 'img/username-icon.svg' %}"
-                        alt="username-icon"
-                        style="height: 1rem"
-                    />
-                    </div>
-                    <input
-                        class="form-control bg-light"
-                        type="text"
-                        placeholder="Nombre"
-                        id="name"
-                    />
-                    </div>
+    </form>
 
-                <div class="input-group mt-1">
-                    <div class="input-group-text bg-dark">
-                    <img
-                        src="https://static.vecteezy.com/system/resources/previews/005/005/909/non_2x/user-icon-in-trendy-flat-style-isolated-on-grey-background-user-symbol-for-your-web-site-design-logo-app-ui-illustration-eps10-free-vector.jpg"
-                        alt="username-icon"
-                        style="height: 1rem"
-                    />
-                    </div>
-                    <input
-                        class="form-control bg-light"
-                        type="text"
-                        placeholder="Usuario"
-                        id="username"
-                    />
-                    </div>
-
-                <div class="input-group mt-1">
-                    <div class="input-group-text bg-dark">
-                        <img
-                            src="https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcTxHMiZ_2eirOvWeLu_WaFHzBzWHkll4nDwNFHWmB9zlfxcF3q7cKV1Y9rHnrbgICrt"
-                            alt="username-icon"
-                            style="height: 1rem"
-                        />
-                    </div>
-                        <input
-                        class="form-control bg-light"
-                        type="text"
-                        placeholder="Correo Electronico"
-                        id="email"
-                        />
-                </div>
-
-                <div class="input-group mt-1">
-                    <div class="input-group-text bg-danger">
-                    <img
-                        src="{% static 'img/password-icon.svg' %}"
-                        alt="password-icon"
-                        style="height: 1rem"
-                    />
-                    </div>
-                    <input
-                        class="form-control bg-light"
-                        type="password"
-                        placeholder="Contraseña"
-                        id="pass"
-                    />
-                    </div>
-    
-                <div id="check">
-
-                </div>   
-
-                    <button class="btn btn-secondary mt-3 mx-auto d-block w-75 rounded-pill" id="btn_reg" type="button">Registrarse</button>
-            
-            </div>
-        </form>
-    <!--modelo-->
-    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5 text-center mx-auto" id="exampleModalLabel">Carta Generada</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="w-50 text-center mx-auto" id="resultado">
-
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="{% static 'js/registro.js' %}"></script>
-<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
-</html>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="{% static 'js/registro.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

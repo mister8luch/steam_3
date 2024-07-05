@@ -37,17 +37,17 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="{% url 'catalogo' %}">Todos</a></li>
-                <li><a class="dropdown-item" href="/Categoria/Accion.html">Accion</a></li>
-                <li><a class="dropdown-item" href="/Categoria/Aventura.html">Aventura</a></li>
-                <li><a class="dropdown-item" href="/Categoria/Carrera.html">Carrera</a></li>
-                <li><a class="dropdown-item" href="/Categoria/Deporte.html">Deporte</a></li>
-                <li><a class="dropdown-item" href="/Categoria/Estrategia.html">Estrategia</a></li>
-                <li><a class="dropdown-item" href="/Categoria/Musica.html">Musica</a></li>
-                <li><a class="dropdown-item" href="/Categoria/Rogue.html">Roguelike</a></li>
-                <li><a class="dropdown-item" href="/Categoria/Rol.html">Rol</a></li>
-                <li><a class="dropdown-item" href="/Categoria/Simula.html">Simulacion</a></li>
-                <li><a class="dropdown-item" href="/Categoria/Turnos.html">turnos</a></li>
-                <li><a class="dropdown-item" href="/Categoria/Free.html">Free to Play</a></li>
+                <li><a class="dropdown-item" href="{% url 'catalogo' %}">Accion</a></li>
+                <li><a class="dropdown-item" href="{% url 'catalogo' %}">Aventura</a></li>
+                <li><a class="dropdown-item" href="{% url 'catalogo' %}">Carrera</a></li>
+                <li><a class="dropdown-item" href="{% url 'catalogo' %}">Deporte</a></li>
+                <li><a class="dropdown-item" href="{% url 'catalogo' %}">Estrategia</a></li>
+                <li><a class="dropdown-item" href="{% url 'catalogo' %}">Musica</a></li>
+                <li><a class="dropdown-item" href="{% url 'catalogo' %}">Roguelike</a></li>
+                <li><a class="dropdown-item" href="{% url 'catalogo' %}">Rol</a></li>
+                <li><a class="dropdown-item" href="{% url 'catalogo' %}">Simulacion</a></li>
+                <li><a class="dropdown-item" href="{% url 'catalogo' %}">turnos</a></li>
+                <li><a class="dropdown-item" href="{% url 'catalogo' %}">Free to Play</a></li>
               </ul>
             </li>
              <li class="nav-item px-3">
@@ -63,6 +63,7 @@
           </ul>
         </div>
               <div class="logo">
+              {{usuario.Usuario}}  
               <a class="navbar-brand" href="{% url 'usuario' %}" >
                 <img src="{% static 'img/login.jpg' %}" alt="login..." width="64" height="64" >
               </a>

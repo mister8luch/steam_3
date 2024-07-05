@@ -1,4 +1,5 @@
 from django.db import models
+
 # Create your models here.
 class Juego(models.Model):
     id_juego=models.AutoField(primary_key=True,db_column="idJuego")
@@ -18,3 +19,8 @@ class Usuario(models.Model):
     Usuario=models.CharField(max_length=30)
     correo=models.CharField(max_length=50)
     contrasena=models.CharField(max_length=20)
+    
+class Compra(models.Model):
+    usuario = models.ForeignKey('Usuario', on_delete=models.CASCADE)
+    juego = models.ForeignKey('Juego', on_delete=models.CASCADE)
+    fecha_compra = models.DateTimeField(auto_now_add=True)

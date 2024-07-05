@@ -1,7 +1,13 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render,redirect, get_object_or_404
+from django.contrib.auth import authenticate, login as auth_login
+from django.contrib.auth.decorators import login_required
 from .models import Juego
 from .models import Usuario
+from .models import Compra
 import re
+#from django.contrib.auth.decorators import login_required
+
+
 
 # Create your views here.
 def principal(request):
@@ -9,7 +15,9 @@ def principal(request):
     return render(request, 'pages/principal.html', context)
 
 def producto(request):
-    context = {}
+    context = {
+        
+    }
     return render(request, 'pages/producto.html', context)
 
 def catalogo(request):
@@ -35,16 +43,11 @@ def login(request):
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
-
-        # Aquí podrías verificar en tu base de datos si el usuario y contraseña son válidos
-        # Por ejemplo, utilizando el modelo Usuario
-
-        # Supongamos que Usuario es tu modelo de usuarios
         from .models import Usuario
 
         try:
             usuario = Usuario.objects.get(Usuario=username, contrasena=password)
-            # Si el usuario y contraseña son correctos, podrías redirigir a la página principal
+            # Si el usuario y contraseña son correctos
             return redirect('inicio')
         except Usuario.DoesNotExist:
             # Si el usuario no existe o la contraseña no coincide, mostrar un mensaje de error
@@ -107,3 +110,14 @@ def validate_email(email):
 def pagoFinal(request):
     context = {}
     return render(request, 'pages/compraFinal.html', context)
+
+@login_required
+def comprar_juego(request, juego_id):
+    juego = get_object_or_404(Juego, id_juego=juego_id)
+    usuario = request.user
+
+    # Asegurarte de que el usuario actual esté en la tabla Usuario
+    usuario_obj = get_object_or_404(Usuario, Usuario=usuario.username)
+
+    compra = Compra.objects.create(usuario=usuario_obj, juego=juego)
+    return redirect('pago_final')

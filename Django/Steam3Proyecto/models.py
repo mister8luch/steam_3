@@ -19,6 +19,7 @@ class Usuario(models.Model):
     Usuario=models.CharField(max_length=30)
     correo=models.CharField(max_length=50)
     contrasena=models.CharField(max_length=20)
+    es_admin = models.BooleanField(default=False)
     
 class Compra(models.Model):
     usuario = models.ForeignKey('Usuario', on_delete=models.CASCADE)

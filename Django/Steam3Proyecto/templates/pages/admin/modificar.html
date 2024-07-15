@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Juego</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Modificar Juego</h2>
+        <form action="{% url 'modificar' pk=juego.id_juego %}" method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="titulo" class="form-label">Título</label>
+                <input value="{{juego.titulo}}" type="text" class="form-control" id="titulo" name="titulo" required>
+            </div>
+            <div class="mb-3">
+                <label for="desarrollador" class="form-label">Desarrollador</label>
+                <input value="{{juego.desarrollador}}" type="text" class="form-control" id="desarrollador" name="desarrollador" required>
+            </div>
+            <div class="mb-3">
+                <label for="descripcion" class="form-label">Descripción</label>
+                <textarea class="form-control" id="descripcion" name="descripcion" rows="3" required>{{juego.descripcion}} </textarea>
+            </div>
+            <div class="mb-3">
+                <label for="resena" class="form-label">Reseña</label>
+                <input value="{{juego.resena}}" type="text" class="form-control" id="resena" name="resena" required>
+            </div>
+            <div class="mb-3">
+                <label for="fecha_lanzamiento" class="form-label">Fecha de Lanzamiento</label>
+                <input value="{{juego.fecha_lanzamiento}}" type="date" class="form-control" id="fecha_lanzamiento" name="fecha_lanzamiento" required>
+            </div>
+            <div class="mb-3">
+                <label for="editor" class="form-label">Editor</label>
+                <input value="{{juego.editor}}" type="text" class="form-control" id="editor" name="editor" required>
+            </div>
+            <div class="mb-3">
+                <label for="genero" class="form-label">Género</label>
+                <select class="form-select" id="genero" name="genero" required>
+                    <option value="">Selecciona un género</option>
+                    <option value="Acción" {% if juego.genero == "Acción" %}selected{% endif %}>Acción</option>
+                    <option value="Aventura" {% if juego.genero == "Aventura" %}selected{% endif %}>Aventura</option>
+                    <option value="Carrera" {% if juego.genero == "Carrera" %}selected{% endif %}>Carrera</option>
+                    <option value="Deporte" {% if juego.genero == "Deporte" %}selected{% endif %}>Deporte</option>
+                    <option value="Estrategia" {% if juego.genero == "Estrategia" %}selected{% endif %}>Estrategia</option>
+                    <option value="Musica" {% if juego.genero == "Musica" %}selected{% endif %}>Música</option>
+                    <option value="Roguelike" {% if juego.genero == "Roguelike" %}selected{% endif %}>Roguelike</option>
+                    <option value="Rol" {% if juego.genero == "Rol" %}selected{% endif %}>Rol</option>
+                    <option value="Simulacion" {% if juego.genero == "Simulacion" %}selected{% endif %}>Simulación</option>
+                    <option value="Turnos" {% if juego.genero == "Turnos" %}selected{% endif %}>Turnos</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="ruta_imagen" class="form-label">Ruta de la Imagen</label>
+                <input value="{{juego.ruta_imagen}}" type="text" class="form-control" id="ruta_imagen" name="ruta_imagen" required>
+            </div>
+            <div class="mb-3">
+                <label for="precio" class="form-label">Precio</label>
+                <input value="{{juego.precio}}" type="text" class="form-control" id="precio" name="precio" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar Juego</button>
+        </form>
+    </div>
+
+    <script src="{% static '/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

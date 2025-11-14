@@ -128,6 +128,9 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 # Motor de almacenamiento para Whitenoise (maneja compresión y caché)
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
 
 
 # Default primary key field type

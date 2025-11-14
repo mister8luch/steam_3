@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-(8o_c5!6xc&nmk4!ln_#(f6fyki*9wlqv@uf&w62hts6ylgu59
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['steam-3.onrender.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -48,6 +48,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'Django.urls'
@@ -119,10 +121,14 @@ import os
 from pathlib import Path
 
 STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
+
+# Directorio donde 'collectstatic' reunirá todos los archivos estáticos
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# Motor de almacenamiento para Whitenoise (maneja compresión y caché)
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

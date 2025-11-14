@@ -120,7 +120,7 @@ USE_TZ = True
 import os
 from pathlib import Path
 
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 
 # Directorio donde 'collectstatic' reunirá todos los archivos estáticos
 STATIC_ROOT = BASE_DIR / 'staticfiles'

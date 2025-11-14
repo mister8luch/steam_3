@@ -150,7 +150,9 @@ STATIC_URL = 'static/'
 # Directorio donde 'collectstatic' reunirá todos los archivos estáticos
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-
+STATICFILES_DIRS = [
+    BASE_DIR / 'Steam3Proyecto' / 'static',
+]
 
 
 

@@ -120,7 +120,7 @@ USE_TZ = True
 import os
 from pathlib import Path
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 # Directorio donde 'collectstatic' reunirá todos los archivos estáticos
 STATIC_ROOT = BASE_DIR / 'staticfiles'
@@ -128,9 +128,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 # Motor de almacenamiento para Whitenoise (maneja compresión y caché)
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-STATICFILES_DIRS = [
-    BASE_DIR / 'static',
-]
+
 
 
 # Default primary key field type

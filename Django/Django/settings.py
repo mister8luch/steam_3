@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-(8o_c5!6xc&nmk4!ln_#(f6fyki*9wlqv@uf&w62hts6ylgu59
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['steam-3-5aaa.onrender.com']
+ALLOWED_HOSTS = ['steam-3-5aaa.onrender.com','127.0.0.1']
 
 
 # Application definition
@@ -59,6 +59,13 @@ MIDDLEWARE = [
     
     
 ]
+
+STORAGES = {
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
+
 
 ROOT_URLCONF = 'Django.urls'
 
@@ -145,13 +152,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
-# Directorio donde 'collectstatic' reunirá todos los archivos estáticos
+
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'Steam3Proyecto' / 'static',
+    BASE_DIR / 'static',
 ]
 
 

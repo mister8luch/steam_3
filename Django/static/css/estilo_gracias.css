@@ -1,0 +1,9 @@
+h1{
+    color: rgb(241, 211, 156); 
+}
+
+.alert {
+    font-size: 20px; /* Tamaño de la fuente */
+    line-height: 1.5; /* Espacio entre líneas */
+    color: rgb(177, 124, 23);
+}

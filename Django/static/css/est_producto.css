@@ -1,0 +1,81 @@
+/* Estilos de los contenedores de información */
+.contenedor-info {
+    display: none;
+    padding: 20px;
+    color:orange;
+    background-color: rgb(112 108 107);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de los botones */
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    padding: 10px 70px; /* Ajusta el tamaño del botón */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* Mostrar el contenedor de información correspondiente al checkbox seleccionado */
+.radio-juego:checked ~ .contenedor-info {
+    display: none;
+}
+#apex:checked ~ #apex-info,
+#persona:checked ~ #persona-info,
+#hollow:checked ~ #hollow-info {
+    display: block;
+    
+}
+
+body{
+    background-color: rgb(242 201 130);
+}
+
+/* Ajustamos el estilo del list-group */
+.list-group {
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    align-items: flex-start; /* Alineamos los elementos a la izquierda */
+}
+
+/* Ajustamos el estilo de las etiquetas de la lista */
+.list-group-item {
+    display: flex;
+    align-items: center; /* Alineamos el contenido verticalmente */
+    cursor: pointer; /* Cambiamos el cursor al pasar sobre el elemento */
+    margin-bottom: 10px; /* Espacio entre cada elemento de la lista */
+}
+
+.list-group-item img {
+    margin-right: 15px; /* Espacio entre el logo y el texto */
+}
+
+/* Estilo para cuando se selecciona un radio */
+.radio-juego:checked + label {
+    font-weight: bold; /* Hacemos el texto en negrita para indicar la selección */
+}
+
+/* Ocultar visualmente los checkboxes */
+.radio-juego {
+    opacity: 0;
+    position: absolute;
+}
+
+.extra img{
+    float: right;
+    border-radius: 10px;
+    margin-right: 1em;
+}
+.extra{
+    color: orange;
+    background-color: azure;
+}

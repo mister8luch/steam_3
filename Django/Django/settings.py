@@ -60,11 +60,11 @@ MIDDLEWARE = [
     
 ]
 
-STORAGES = {
+""" STORAGES = {
     "staticfiles": {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
-}
+} """
 
 
 ROOT_URLCONF = 'Django.urls'

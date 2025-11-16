@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Usuarios</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="row mb-4">
+            <div class="col">
+                <h2>Lista de Usuarios Registrados</h2>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                <a href="{% url 'crud' %}" class="btn btn-primary">Lista VideoJuegos</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <table class="table table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Nombre de Usuario</th>
+                            <th scope="col">Email</th>
+                            
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for usuario in usuarios %}
+                        <tr>
+                            
+                            <td>{{ usuario.id_usuario }}</td>
+                            <td>{{ usuario.Usuario }}</td>
+                            <td>{{ usuario.correo }}</td>
+                            
+                            <td>
+                                <a href="{% url 'eliminarUsuario' pk=usuario.id_usuario %}"><button class="btn btn-danger btn-sm">
+                                    <i class="bi bi-trash"></i> Eliminar
+                                </button></a>
+                            </td>
+                        </tr>
+                        {% empty %}
+                        <tr>
+                            <td colspan="5" class="text-center">No hay usuarios registrados</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src='{% static 'js/bootstrap.bundle.min.js' %}'></script>
+</body>
+</html>

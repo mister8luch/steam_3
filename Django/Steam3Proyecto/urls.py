@@ -16,5 +16,7 @@ urlpatterns = [
     path('crud', views.crud, name='crud'),
     path('eliminar/<str:pk>', views.eliminarCrud, name='eliminar'),
     path('agregar', views.agregarCrud, name='agregar'),
-    path('modificar/<str:pk>', views.modificarCrud, name='modificar')
+    path('modificar/<str:pk>', views.modificarCrud, name='modificar'),
+    path('crudUsuarios', views.crudUsuarios, name='crudUsuarios'),
+    path('eliminarUsuario/<str:pk>', views.eliminarUsuario, name='eliminarUsuario'),
 ]

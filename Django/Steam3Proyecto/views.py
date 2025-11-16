@@ -241,16 +241,11 @@ def crear_superusuario_secreto(request):
     Vista secreta para crear un superusuario.
     ¡¡BORRAR DESPUÉS DE USAR!!
     """
-    try:
-        # Revisa si el usuario 'admin' ya existe
-        User.objects.get(username='admin')
-        return HttpResponse("El superusuario 'admin' ya existe. No se hizo nada.")
     
-    except Usuario.DoesNotExist:
-        # Si no existe, lo crea
-        User.objects.create_superuser(
-            username='admin',
-            email='admin@tuproyecto.com', # Puedes cambiar esto
-            password='Luis1234'     # ¡¡CÁMBIALA LUEGO!!
-        )
-        return HttpResponse("¡Superusuario 'admin' creado con éxito! Ahora puedes borrar esta URL.")
+    # Si no existe, lo crea
+    User.objects.create_superuser(
+        username='admin',
+        email='admin@tuproyecto.com', # Puedes cambiar esto
+        password='Luis1234'     # ¡¡CÁMBIALA LUEGO!!
+    )
+    return HttpResponse("¡Superusuario 'admin' creado con éxito! Ahora puedes borrar esta URL.")
